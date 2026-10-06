@@ -115,3 +115,16 @@ This project is licensed under CC-BY-NC-4.0. See [LICENSE](LICENSE) for details.
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for how to get involved.
+
+
+
+
+個人
+docker exec -it --user kato-lab tribev2-lab
+bash -lc \
+   'cd /workspace/tribev2 && jupyter lab \
+   --ip=0.0.0.0 \
+   --port=8888 \
+   --no-browser \
+   --ServerApp.allow_remote_access=True \
+   --ServerApp.root_dir=/workspace'
